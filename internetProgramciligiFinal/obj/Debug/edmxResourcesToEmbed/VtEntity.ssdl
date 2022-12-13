@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="denemeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="varchar(max)" />
+    <Property Name="password" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="UserData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="surName" Type="varchar(max)" />
+    <Property Name="birthDate" Type="date" />
+    <Property Name="skill" Type="varchar(max)" />
+    <Property Name="gender" Type="varchar" MaxLength="5" />
+    <Property Name="image" Type="varchar(max)" />
+    <Property Name="isItWorking" Type="varchar(max)" />
+    <Property Name="salary" Type="int" />
+    <Property Name="socialMedya" Type="varchar(max)" />
+    <Property Name="e_mail" Type="varchar(max)" />
+    <Property Name="projes" Type="varchar(max)" />
+    <Property Name="pNumber" Type="nvarchar" MaxLength="24" />
+  </EntityType>
+  <EntityContainer Name="denemeDBModelStoreContainer">
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserData" EntityType="Self.UserData" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

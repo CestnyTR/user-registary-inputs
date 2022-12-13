@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="denemeDBModelStoreContainer" CdmEntityContainer="VtEntity1">
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="denemeDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserData">
+      <EntityTypeMapping TypeName="denemeDBModel.UserData">
+        <MappingFragment StoreEntitySet="UserData">
+          <ScalarProperty Name="pNumber" ColumnName="pNumber" />
+          <ScalarProperty Name="projes" ColumnName="projes" />
+          <ScalarProperty Name="e_mail" ColumnName="e_mail" />
+          <ScalarProperty Name="socialMedya" ColumnName="socialMedya" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="isItWorking" ColumnName="isItWorking" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="skill" ColumnName="skill" />
+          <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+          <ScalarProperty Name="surName" ColumnName="surName" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

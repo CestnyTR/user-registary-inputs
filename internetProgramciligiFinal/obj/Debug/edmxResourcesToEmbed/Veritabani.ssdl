@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="denemeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="varchar(max)" />
+    <Property Name="Sifre" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Veriler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="varchar(max)" />
+    <Property Name="Soyad" Type="varchar(max)" />
+    <Property Name="doguntarih" Type="date" />
+    <Property Name="beceriler" Type="varchar(max)" />
+    <Property Name="cinsiyet" Type="varchar" MaxLength="5" />
+    <Property Name="image" Type="varchar(max)" />
+    <Property Name="calisiyormu" Type="varchar(max)" />
+    <Property Name="maas" Type="int" />
+    <Property Name="sosyalmedya" Type="varchar(max)" />
+    <Property Name="eposta" Type="varchar(max)" />
+    <Property Name="calisilanproje" Type="varchar(max)" />
+    <Property Name="telefon" Type="nvarchar" MaxLength="24" />
+  </EntityType>
+  <EntityContainer Name="denemeDBModelStoreContainer">
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Veriler" EntityType="Self.Veriler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

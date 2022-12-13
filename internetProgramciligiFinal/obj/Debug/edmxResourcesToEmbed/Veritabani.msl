@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="denemeDBModelStoreContainer" CdmEntityContainer="VtEntity">
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="denemeDBModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Veriler">
+      <EntityTypeMapping TypeName="denemeDBModel.Veriler">
+        <MappingFragment StoreEntitySet="Veriler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="dogumtarih" ColumnName="doguntarih" />
+          <ScalarProperty Name="beceriler" ColumnName="beceriler" />
+          <ScalarProperty Name="cinsiyet" ColumnName="cinsiyet" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="calisiyormu" ColumnName="calisiyormu" />
+          <ScalarProperty Name="maas" ColumnName="maas" />
+          <ScalarProperty Name="sosyalmedya" ColumnName="sosyalmedya" />
+          <ScalarProperty Name="eposta" ColumnName="eposta" />
+          <ScalarProperty Name="calisilanproje" ColumnName="calisilanproje" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
